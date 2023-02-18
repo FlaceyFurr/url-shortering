@@ -1,1 +1,68 @@
-/*# sourceMappingURL=style.css.map */
+.header {
+  background-color: white;
+  margin-top: 40px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.navigation__logo:hover {
+  cursor: pointer;
+}
+.navigation__left {
+  display: flex;
+}
+.navigation__list-links {
+  margin-left: 30px;
+  list-style: none;
+  display: flex;
+  width: 270px;
+  justify-content: space-between;
+}
+.navigation__link {
+  text-decoration: none;
+  color: hsl(257deg, 7%, 63%);
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.335s ease-in;
+}
+.navigation__link:hover {
+  color: hsl(257deg, 27%, 26%);
+}
+.navigation__right {
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation__button-login {
+  background-color: white;
+  border: none;
+  color: hsl(257deg, 7%, 63%);
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.335s ease-in;
+}
+.navigation__button-login:hover {
+  cursor: pointer;
+  color: hsl(257deg, 27%, 26%);
+}
+.navigation__button-sign {
+  color: white;
+  background-color: hsl(180deg, 66%, 49%);
+  border: none;
+  padding: 5px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 20px;
+  transition: all 0.335s ease-in;
+}
+.navigation__button-sign:hover {
+  cursor: pointer;
+  background-color: hsl(180deg, 90%, 65%);
+}/*# sourceMappingURL=style.css.map */

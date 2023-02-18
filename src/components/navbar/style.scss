@@ -1,0 +1,87 @@
+$white: white;
+$cyan: hsl(180, 66%, 49%);
+$lightCyan: hsl(180, 90%, 65%);
+$grayishViolet: hsl(257, 7%, 63%);
+$darkViolet: hsl(257, 27%, 26%);
+
+.header {
+    background-color: $white;
+    margin-top: 40px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__left {
+    display: flex;
+  }
+
+  &__list-links {
+    margin-left: 30px;
+    list-style: none;
+    display: flex;
+    width: 270px;
+    justify-content: space-between;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $grayishViolet;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.335s ease-in;
+
+    &:hover {
+      color: $darkViolet;
+    }
+  }
+
+  &__right {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__button-login {
+    background-color: $white;
+    border: none;
+    color: $grayishViolet;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.335s ease-in;
+
+    &:hover {
+      cursor: pointer;
+      color: $darkViolet;
+    }
+  }
+
+  &__button-sign {
+    color: $white;
+    background-color: $cyan;
+    border: none;
+    padding: 5px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 20px;
+    transition: all 0.335s ease-in;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $lightCyan;
+    }
+  }
+}
