@@ -1,1 +1,161 @@
-/*# sourceMappingURL=style.css.map */
+.hero {
+  width: 80%;
+  margin: 120px auto 140px;
+}
+.hero__title {
+  font-size: 74px;
+  line-height: 90px;
+  width: 45%;
+}
+.hero__subtitle {
+  font-size: 18px;
+  color: hsl(257deg, 7%, 63%);
+  width: 30%;
+  margin-top: 10px;
+}
+.hero__image {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 130px;
+  transform: translate(100px, 0);
+}
+
+.action__button {
+  margin-top: 40px;
+  background-color: hsl(180deg, 66%, 49%);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all 0.335s ease-in;
+}
+.action__button:hover {
+  cursor: pointer;
+  background-color: hsl(180deg, 90%, 65%);
+}
+
+.url-short {
+  width: 80%;
+  height: 150px;
+  background-image: url(./../../images/bg-shorten-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(257deg, 27%, 26%);
+  border-radius: 10px;
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.url-short__input {
+  padding: 20px 40px;
+  font-size: 18px;
+  width: 60%;
+  border: none;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.url-short__button {
+  color: white;
+  background-color: hsl(180deg, 66%, 49%);
+  border: none;
+  padding: 20px 40px;
+  font-size: 18px;
+  border-radius: 10px;
+  transition: all 0.335s ease-in;
+}
+.url-short__button:hover {
+  cursor: pointer;
+  background-color: hsl(180deg, 90%, 65%);
+}
+
+.stats {
+  background-color: hsl(0deg, 0%, 95%);
+  margin-top: 210px;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 50px;
+  position: relative;
+}
+.stats .card-line {
+  position: absolute;
+  z-index: 1;
+  top: 600px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 50%;
+  border: none;
+  height: 8px;
+  background-color: hsl(180deg, 66%, 49%);
+}
+.stats__title {
+  font-size: 54px;
+}
+.stats__subtitle {
+  width: 28%;
+  margin: 0 auto;
+  font-size: 18px;
+  color: hsl(257deg, 7%, 63%);
+}
+.stats__cards {
+  margin: 100px auto 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  gap: 30px;
+  width: 1260px;
+  position: relative;
+  z-index: 2;
+}
+.stats__cards .card {
+  width: 400px;
+  height: 300px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+}
+.stats__cards .card__background {
+  background-color: hsl(257deg, 27%, 26%);
+  padding: 16px 20px;
+  border-radius: 50px;
+  position: absolute;
+  left: 20px;
+  top: -40px;
+}
+.stats__cards .card__title {
+  font-size: 24px;
+  text-align: left;
+  width: 85%;
+  margin: 60px auto 0;
+}
+.stats__cards .card__subtitle {
+  text-align: left;
+  font-size: 18px;
+  width: 85%;
+  margin: 20px auto 0;
+  color: hsl(257deg, 7%, 63%);
+}
+.stats__cards .card_second {
+  margin-top: 40px;
+}
+.stats__cards .card_third {
+  margin-top: 80px;
+}
+
+.action {
+  background-image: url(./../../images/bg-boost-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(257deg, 27%, 26%);
+  text-align: center;
+  padding: 80px 0;
+}
+.action__title {
+  color: white;
+  font-size: 44px;
+}/*# sourceMappingURL=style.css.map */

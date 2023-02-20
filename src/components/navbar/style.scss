@@ -5,8 +5,8 @@ $grayishViolet: hsl(257, 7%, 63%);
 $darkViolet: hsl(257, 27%, 26%);
 
 .header {
-    background-color: $white;
-    margin-top: 40px;
+  background-color: $white;
+  margin-top: 40px;
 }
 
 .container {
@@ -19,7 +19,6 @@ $darkViolet: hsl(257, 27%, 26%);
   justify-content: space-between;
 
   &__logo {
-
     &:hover {
       cursor: pointer;
     }
@@ -35,6 +34,7 @@ $darkViolet: hsl(257, 27%, 26%);
     display: flex;
     width: 270px;
     justify-content: space-between;
+    align-self: center;
   }
 
   &__link {

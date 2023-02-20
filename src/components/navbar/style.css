@@ -24,6 +24,7 @@
   display: flex;
   width: 270px;
   justify-content: space-between;
+  align-self: center;
 }
 .navigation__link {
   text-decoration: none;

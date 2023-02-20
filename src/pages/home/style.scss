@@ -1,0 +1,188 @@
+$white: white;
+$cyan: hsl(180, 66%, 49%);
+$lightCyan: hsl(180, 90%, 65%);
+$gray: hsl(0, 0%, 95%);
+$grayishViolet: hsl(257, 7%, 63%);
+$darkViolet: hsl(257, 27%, 26%);
+
+.hero {
+  width: 80%;
+  margin: 120px auto 140px;
+  &__title {
+    font-size: 74px;
+    line-height: 90px;
+    width: 45%;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    color: $grayishViolet;
+    width: 30%;
+    margin-top: 10px;
+  }
+
+  &__image {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 130px;
+    transform: translate(100px, 0);
+  }
+}
+
+.action__button {
+  margin-top: 40px;
+  background-color: $cyan;
+  color: $white;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all 0.335s ease-in;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $lightCyan;
+  }
+}
+
+.url-short {
+  width: 80%;
+  height: 150px;
+  background-image: url(./../../images/bg-shorten-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $darkViolet;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__input {
+    padding: 20px 40px;
+    font-size: 18px;
+    width: 60%;
+    border: none;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+
+  &__button {
+    color: white;
+    background-color: $cyan;
+    border: none;
+    padding: 20px 40px;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: all 0.335s ease-in;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $lightCyan;
+    }
+  }
+}
+
+.stats {
+  background-color: $gray;
+  margin-top: 210px;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 50px;
+  position: relative;
+
+  .card-line {
+    position: absolute;
+    z-index: 1;
+    top: 600px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 50%;
+    border: none;
+    height: 8px;
+    background-color: $cyan;
+  }
+
+  &__title {
+    font-size: 54px;
+  }
+
+  &__subtitle {
+    width: 28%;
+    margin: 0 auto;
+    font-size: 18px;
+    color: $grayishViolet;
+  }
+
+  &__cards {
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    gap: 30px;
+    width: 1260px;
+    position: relative;
+    z-index: 2;
+
+    .card {
+      width: 400px;
+      height: 300px;
+      background-color: $white;
+      border-radius: 10px;
+      position: relative;
+
+      &__background {
+        background-color: $darkViolet;
+        padding: 16px 20px;
+        border-radius: 50px;
+        position: absolute;
+        left: 20px;
+        top: -40px;
+      }
+
+      &__title {
+        font-size: 24px;
+        text-align: left;
+        width: 85%;
+        margin: 60px auto 0;
+      }
+
+      &__subtitle {
+        text-align: left;
+        font-size: 18px;
+        width: 85%;
+        margin: 20px auto 0;
+        color: $grayishViolet;
+      }
+
+      &_first {
+      }
+
+      &_second {
+        margin-top: 40px;
+      }
+
+      &_third {
+        margin-top: 80px;
+      }
+    }
+  }
+}
+
+.action {
+  background-image: url(./../../images/bg-boost-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $darkViolet;
+  text-align: center;
+  padding: 80px 0;
+
+  &__title {
+    color: $white;
+    font-size: 44px;
+  }
+}
