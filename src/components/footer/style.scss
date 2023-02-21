@@ -1,0 +1,61 @@
+$veryDarkViolet: hsl(260, 8%, 14%);
+$white: white;
+$grayishViolet: hsl(257, 7%, 63%);
+$cyan: hsl(180, 66%, 49%);
+
+.footer {
+  background-color: $veryDarkViolet;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .navigation {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    flex-basis: 20%;
+  }
+
+  &__links {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 18px;
+    color: $white;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__link {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .link {
+    text-decoration: none;
+    color: $grayishViolet;
+    transition: all 0.335s ease-in;
+
+    &:hover {
+      color: $cyan;
+    }
+  }
+
+  &__icons {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+  }
+}

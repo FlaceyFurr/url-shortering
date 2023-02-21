@@ -1,7 +1,7 @@
 import "./style.css";
 
 const Navbar = () => {
-  const logo: string = require("./../../images/logo.svg").default;
+  const logo: string = require("./../../images/logo-header.svg").default;
 
   return (
     <header className="header">
