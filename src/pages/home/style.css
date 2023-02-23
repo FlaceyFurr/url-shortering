@@ -140,10 +140,10 @@
   margin: 20px auto 0;
   color: hsl(257deg, 7%, 63%);
 }
-.stats__cards .card_second {
+.stats__cards .card__second {
   margin-top: 40px;
 }
-.stats__cards .card_third {
+.stats__cards .card__third {
   margin-top: 80px;
 }
 
@@ -158,4 +158,118 @@
 .action__title {
   color: white;
   font-size: 44px;
+}
+
+/* Adaptive */
+@media (max-width: 1400px) {
+  .stats__cards {
+    grid-template-columns: repeat(3, 300px);
+    width: 940px;
+    gap: 20px;
+  }
+  .stats__cards .card {
+    width: 300px;
+  }
+  .stats__cards .card__title {
+    font-size: 20px;
+  }
+  .stats__cards .card__subtitle {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1250px) {
+  .hero__image {
+    transform: translate(150px, 0);
+    width: 650px;
+    top: 200px;
+  }
+  .hero__title {
+    font-size: 60px;
+    width: 55%;
+  }
+  .hero__subtitle {
+    width: 40%;
+  }
+  .stats__subtitle {
+    width: 50%;
+  }
+}
+@media (max-width: 1100px) {
+  .hero {
+    width: 90%;
+  }
+  .url-short {
+    width: 90%;
+  }
+  .stats__cards {
+    grid-template-columns: repeat(3, 250px);
+    width: 790px;
+  }
+  .stats__cards .card {
+    width: 250px;
+  }
+}
+@media (max-width: 980px) {
+  .hero__title {
+    font-size: 46px;
+    line-height: 70px;
+  }
+  .hero__subtitle {
+    font-size: 16px;
+  }
+  .hero__image {
+    width: 550px;
+  }
+  .url-short {
+    height: 120px;
+  }
+  .url-short__input {
+    padding: 20px 20px;
+    font-size: 16px;
+  }
+  .url-short__button {
+    padding: 20px 20px;
+    font-size: 16px;
+  }
+  .stats {
+    margin-top: 200px;
+    padding-top: 150px;
+  }
+  .stats__title {
+    font-size: 38px;
+  }
+  .stats__subtitle {
+    font-size: 16px;
+  }
+  .stats__cards {
+    grid-template-columns: 350px;
+    justify-content: center;
+    width: 90%;
+    gap: 40px;
+  }
+  .stats__cards .card {
+    width: 350px;
+    height: 250px;
+  }
+  .stats__cards .card__title {
+    text-align: center;
+  }
+  .stats__cards .card__subtitle {
+    text-align: center;
+  }
+  .stats__cards .card__second {
+    margin-top: 40px;
+  }
+  .stats__cards .card__third {
+    margin-top: 40px;
+  }
+  .stats__cards .card__background {
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .stats .card-line {
+    height: 600px;
+    width: 8px;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=style.css.map */

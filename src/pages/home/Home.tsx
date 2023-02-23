@@ -49,7 +49,7 @@ const Home = () => {
           statistics dashboard.
         </p>
         <div className="stats__cards">
-          <div className="card card_first">
+          <div className="card card__first">
             <div className="card__background">
               <img src={cardImageFirst} alt="logo" />
             </div>
@@ -60,7 +60,7 @@ const Home = () => {
               content.
             </p>
           </div>
-          <div className="card card_second">
+          <div className="card card__second">
             <div className="card__background">
               <img src={cardImageSecond} alt="logo" />
             </div>
@@ -71,7 +71,7 @@ const Home = () => {
               decisions.
             </p>
           </div>
-          <div className="card card_third">
+          <div className="card card__third">
             <div className="card__background">
               <img src={cardImageThird} alt="logo" />
             </div>
