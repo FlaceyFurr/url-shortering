@@ -1,3 +1,4 @@
+import BurgerMenu from "../burgerMenu/BurgerMenu";
 import "./style.css";
 
 const Navbar = () => {
@@ -31,6 +32,7 @@ const Navbar = () => {
             <button className="navigation__button-login">Login</button>
             <button className="navigation__button-sign">Sign Up</button>
           </div>
+          <BurgerMenu />
         </nav>
       </div>
     </header>

@@ -1,1 +1,156 @@
-/*# sourceMappingURL=style.css.map */
+.menu {
+  display: none;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu > li {
+  margin: 0 10px;
+  overflow: hidden;
+}
+.menu__link {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.335s ease-in;
+}
+.menu__link:first-child {
+  margin-top: 15px;
+}
+.menu__link:hover {
+  color: hsl(257deg, 7%, 63%);
+}
+.menu__button-login {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.335s ease-in;
+  margin-top: 15px;
+}
+.menu__button-login:hover {
+  cursor: pointer;
+  color: hsl(257deg, 7%, 63%);
+}
+.menu__button-sign {
+  color: white;
+  background-color: hsl(180deg, 66%, 49%);
+  border: none;
+  padding: 5px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 20px;
+  transition: all 0.335s ease-in;
+}
+.menu__button-sign:hover {
+  cursor: pointer;
+  background-color: hsl(180deg, 90%, 65%);
+}
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+#menu-toggle {
+  display: none;
+}
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+.menu-button {
+  display: block;
+  background-color: hsl(257deg, 27%, 26%);
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 10px;
+}
+.menu-button::before {
+  display: block;
+  background-color: hsl(257deg, 27%, 26%);
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 10px;
+  content: "";
+  margin-top: -8px;
+}
+.menu-button::after {
+  display: block;
+  background-color: hsl(257deg, 27%, 26%);
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 10px;
+  content: "";
+  margin-top: 8px;
+}
+
+@media (max-width: 780px) {
+  .menu {
+    display: flex;
+    position: absolute;
+    top: 0;
+    margin-top: 100px;
+    left: 50%;
+    transform: translate(-50%);
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 0;
+    width: 95%;
+    color: white;
+    background-color: hsl(257deg, 27%, 26%);
+  }
+  .menu > li:first-child {
+    border-radius: 10px 10px 0 0;
+  }
+  .menu > li:last-child {
+    border-radius: 0 0 10px 10px;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+  .menu-button-container {
+    display: flex;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    height: 2.5em;
+    padding: 15px;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+}/*# sourceMappingURL=style.css.map */
