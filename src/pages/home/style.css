@@ -272,4 +272,84 @@
     width: 8px;
     margin: 0 auto;
   }
+}
+@media (max-width: 780px) {
+  .hero {
+    margin: 500px auto 90px;
+  }
+  .hero__image {
+    position: absolute;
+    top: 100px;
+    transform: translate(200px, 0);
+    width: 650px;
+  }
+  .hero__title {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .hero__subtitle {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .action__button {
+    display: flex;
+    margin: 40px auto 0;
+  }
+  .url-short {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 180px;
+    padding: 20px 0;
+  }
+  .url-short__input {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-indent: 20px;
+  }
+  .url-short__button {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  .stats {
+    padding-top: 200px;
+  }
+  .action__title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 560px) {
+  .hero {
+    margin: 350px auto 90px;
+  }
+  .hero__image {
+    width: 440px;
+    transform: translate(150px, 0);
+  }
+  .hero__title {
+    width: 90%;
+    font-size: 32px;
+    line-height: 50px;
+  }
+  .hero__subtitle {
+    width: 80%;
+  }
+  .stats__title {
+    font-size: 24px;
+  }
+  .stats__subtitle {
+    width: 80%;
+  }
+  .stats__cards {
+    grid-template-columns: 280px;
+  }
+  .stats__cards .card {
+    width: 280px;
+  }
+  .stats__cards .card__subtitle {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=style.css.map */

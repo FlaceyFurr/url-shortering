@@ -12,17 +12,19 @@ const Home = () => {
   return (
     <main className="main">
       <section className="hero">
-        <h1 className="hero__title">More than just shorter links</h1>
-        <p className="hero__subtitle">
-          Build your brand's recognition and get detailed insights on how your
-          links are performing.
-        </p>
-        <button className="action__button">Get Started</button>
         <img
           src={heroImage}
           alt="illustration working"
           className="hero__image"
         />
+        <div>
+          <h1 className="hero__title">More than just shorter links</h1>
+          <p className="hero__subtitle">
+            Build your brand's recognition and get detailed insights on how your
+            links are performing.
+          </p>
+          <button className="action__button">Get Started</button>
+        </div>
       </section>
 
       <section className="url-short">
