@@ -49,11 +49,11 @@ $darkViolet: hsl(257, 27%, 26%);
 
 .stats {
   background-color: $gray;
-  margin-top: 210px;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 50px;
   position: relative;
+  top: 70px;
 
   .card-line {
     position: absolute;
@@ -228,8 +228,8 @@ $darkViolet: hsl(257, 27%, 26%);
   }
 
   .stats {
-    margin-top: 200px;
     padding-top: 150px;
+    top: 60px;
 
     &__title {
       font-size: 38px;
@@ -312,7 +312,8 @@ $darkViolet: hsl(257, 27%, 26%);
   }
 
   .stats {
-    padding-top: 200px;
+    padding-top: 150px;
+    top: 110px;
   }
 
   .action {

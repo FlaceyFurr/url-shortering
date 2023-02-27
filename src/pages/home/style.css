@@ -39,11 +39,11 @@
 
 .stats {
   background-color: hsl(0, 0%, 95%);
-  margin-top: 210px;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 50px;
   position: relative;
+  top: 70px;
 }
 .stats .card-line {
   position: absolute;
@@ -180,8 +180,8 @@
     width: 550px;
   }
   .stats {
-    margin-top: 200px;
     padding-top: 150px;
+    top: 60px;
   }
   .stats__title {
     font-size: 38px;
@@ -246,7 +246,8 @@
     margin: 40px auto 0;
   }
   .stats {
-    padding-top: 200px;
+    padding-top: 150px;
+    top: 110px;
   }
   .action__title {
     font-size: 32px;

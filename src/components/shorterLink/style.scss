@@ -5,6 +5,10 @@ $gray: hsl(0, 0%, 95%);
 $grayishViolet: hsl(257, 7%, 63%);
 $darkViolet: hsl(257, 27%, 26%);
 
+.url {
+  position: relative;
+}
+
 .url-short {
   width: 80%;
   height: 150px;
@@ -16,7 +20,8 @@ $darkViolet: hsl(257, 27%, 26%);
   position: absolute;
   z-index: 3;
   left: 50%;
-  transform: translate(-50%, 0);
+  top: 0;
+  transform: translate(-50%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,9 +51,68 @@ $darkViolet: hsl(257, 27%, 26%);
   }
 }
 
+.shorter {
+  position: relative;
+  z-index: 2;
+  top: 70px;
+  width: 100%;
+  margin: 0;
+  background-color: $gray;
+  padding-top: 150px;
+
+  &__background {
+    width: 80%;
+    margin: 0 auto;
+    background-color: $white;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-radius: 10px;
+  }
+
+  &__right {
+    display: flex;
+    margin-right: 3%;
+  }
+
+  &__text-left {
+    margin-left: 3%;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  &__text-right {
+    color: $cyan;
+    font-size: 18px;
+    margin-right: 30px;
+    margin-top: 10px;
+  }
+
+  &__copy {
+    color: $white;
+    background-color: $cyan;
+    border: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: all 0.335s ease-in;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $lightCyan;
+    }
+  }
+}
+
 @media (max-width: 1100px) {
   .url-short {
     width: 90%;
+  }
+
+  .shorter {
+    &__background {
+      width: 90%;
+    }
   }
 }
 
@@ -64,6 +128,36 @@ $darkViolet: hsl(257, 27%, 26%);
     &__button {
       padding: 20px 20px;
       font-size: 16px;
+    }
+  }
+
+  .shorter {
+    padding-top: 100px;
+    top: 60px;
+
+    &__background {
+      display: block;
+      padding: 20px 0;
+    }
+
+    &__text-left {
+      font-size: 14px;
+      margin-top: 0;
+    }
+
+    &__text-right {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
+    &__right {
+      justify-content: space-between;
+      margin-left: 3%;
+    }
+
+    &__copy {
+      font-size: 16px;
+      padding: 10px 15px;
     }
   }
 }
@@ -86,6 +180,15 @@ $darkViolet: hsl(257, 27%, 26%);
       width: 80%;
       margin: 0 auto;
       padding: 20px 0;
+    }
+  }
+
+  .shorter {
+    padding-top: 150px;
+    top: 110px;
+
+    &__copy {
+      margin-top: 10px;
     }
   }
 }
