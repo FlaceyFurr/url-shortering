@@ -1,5 +1,5 @@
 .footer {
-  background-color: hsl(260deg, 8%, 14%);
+  background-color: hsl(260, 8%, 14%);
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -33,11 +33,11 @@
 }
 .footer .link {
   text-decoration: none;
-  color: hsl(257deg, 7%, 63%);
+  color: hsl(257, 7%, 63%);
   transition: all 0.335s ease-in;
 }
 .footer .link:hover {
-  color: hsl(180deg, 66%, 49%);
+  color: hsl(180, 66%, 49%);
 }
 .footer__icons {
   width: 15%;

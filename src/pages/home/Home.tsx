@@ -1,3 +1,4 @@
+import ShorterLink from "../../components/shorterLink/ShorterLink";
 import "./style.css";
 
 const Home = () => {
@@ -27,22 +28,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="url-short">
-        <input
-          type="url"
-          className="url-short__input"
-          name="url"
-          id="url"
-          placeholder="Shorten a link here..."
-          pattern="https://.*"
-          required
-        />
-        <input
-          type="submit"
-          className="url-short__button"
-          value="Shorten It!"
-        />
-      </section>
+      <ShorterLink />
 
       <section className="stats">
         <h2 className="stats__title">Advanced Statistics</h2>

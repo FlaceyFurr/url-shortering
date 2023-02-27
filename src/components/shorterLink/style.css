@@ -1,0 +1,75 @@
+.url-short {
+  width: 80%;
+  height: 150px;
+  background-image: url(./../../images/bg-shorten-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(257, 27%, 26%);
+  border-radius: 10px;
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.url-short__input {
+  padding: 20px 40px;
+  font-size: 18px;
+  width: 60%;
+  border: none;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.url-short__button {
+  color: white;
+  background-color: hsl(180, 66%, 49%);
+  border: none;
+  padding: 20px 40px;
+  font-size: 18px;
+  border-radius: 10px;
+  transition: all 0.335s ease-in;
+}
+.url-short__button:hover {
+  cursor: pointer;
+  background-color: hsl(180, 90%, 65%);
+}
+
+@media (max-width: 1100px) {
+  .url-short {
+    width: 90%;
+  }
+}
+@media (max-width: 980px) {
+  .url-short {
+    height: 120px;
+  }
+  .url-short__input {
+    padding: 20px 20px;
+    font-size: 16px;
+  }
+  .url-short__button {
+    padding: 20px 20px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 780px) {
+  .url-short {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 180px;
+    padding: 20px 0;
+  }
+  .url-short__input {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-indent: 20px;
+  }
+  .url-short__button {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+}/*# sourceMappingURL=style.css.map */

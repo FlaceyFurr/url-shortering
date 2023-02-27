@@ -47,47 +47,6 @@ $darkViolet: hsl(257, 27%, 26%);
   }
 }
 
-.url-short {
-  width: 80%;
-  height: 150px;
-  background-image: url(./../../images/bg-shorten-desktop.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: $darkViolet;
-  border-radius: 10px;
-  position: absolute;
-  z-index: 3;
-  left: 50%;
-  transform: translate(-50%, 0);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &__input {
-    padding: 20px 40px;
-    font-size: 18px;
-    width: 60%;
-    border: none;
-    border-radius: 10px;
-    margin-right: 20px;
-  }
-
-  &__button {
-    color: white;
-    background-color: $cyan;
-    border: none;
-    padding: 20px 40px;
-    font-size: 18px;
-    border-radius: 10px;
-    transition: all 0.335s ease-in;
-
-    &:hover {
-      cursor: pointer;
-      background-color: $lightCyan;
-    }
-  }
-}
-
 .stats {
   background-color: $gray;
   margin-top: 210px;
@@ -240,10 +199,6 @@ $darkViolet: hsl(257, 27%, 26%);
     width: 90%;
   }
 
-  .url-short {
-    width: 90%;
-  }
-
   .stats {
     &__cards {
       grid-template-columns: repeat(3, 250px);
@@ -269,20 +224,6 @@ $darkViolet: hsl(257, 27%, 26%);
 
     &__image {
       width: 550px;
-    }
-  }
-
-  .url-short {
-    height: 120px;
-
-    &__input {
-      padding: 20px 20px;
-      font-size: 16px;
-    }
-
-    &__button {
-      padding: 20px 20px;
-      font-size: 16px;
     }
   }
 
@@ -367,26 +308,6 @@ $darkViolet: hsl(257, 27%, 26%);
     &__button {
       display: flex;
       margin: 40px auto 0;
-    }
-  }
-
-  .url-short {
-    display: grid;
-    grid-template-columns: 1fr;
-    height: 180px;
-    padding: 20px 0;
-
-    &__input {
-      width: 80%;
-      margin: 0 auto;
-      padding: 20px 0;
-      text-indent: 20px;
-    }
-
-    &__button {
-      width: 80%;
-      margin: 0 auto;
-      padding: 20px 0;
     }
   }
 

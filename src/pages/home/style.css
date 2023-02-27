@@ -9,7 +9,7 @@
 }
 .hero__subtitle {
   font-size: 18px;
-  color: hsl(257deg, 7%, 63%);
+  color: hsl(257, 7%, 63%);
   width: 30%;
   margin-top: 10px;
 }
@@ -23,7 +23,7 @@
 
 .action__button {
   margin-top: 40px;
-  background-color: hsl(180deg, 66%, 49%);
+  background-color: hsl(180, 66%, 49%);
   color: white;
   border: none;
   border-radius: 30px;
@@ -34,49 +34,11 @@
 }
 .action__button:hover {
   cursor: pointer;
-  background-color: hsl(180deg, 90%, 65%);
-}
-
-.url-short {
-  width: 80%;
-  height: 150px;
-  background-image: url(./../../images/bg-shorten-desktop.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: hsl(257deg, 27%, 26%);
-  border-radius: 10px;
-  position: absolute;
-  z-index: 3;
-  left: 50%;
-  transform: translate(-50%, 0);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.url-short__input {
-  padding: 20px 40px;
-  font-size: 18px;
-  width: 60%;
-  border: none;
-  border-radius: 10px;
-  margin-right: 20px;
-}
-.url-short__button {
-  color: white;
-  background-color: hsl(180deg, 66%, 49%);
-  border: none;
-  padding: 20px 40px;
-  font-size: 18px;
-  border-radius: 10px;
-  transition: all 0.335s ease-in;
-}
-.url-short__button:hover {
-  cursor: pointer;
-  background-color: hsl(180deg, 90%, 65%);
+  background-color: hsl(180, 90%, 65%);
 }
 
 .stats {
-  background-color: hsl(0deg, 0%, 95%);
+  background-color: hsl(0, 0%, 95%);
   margin-top: 210px;
   text-align: center;
   padding-top: 200px;
@@ -92,7 +54,7 @@
   width: 50%;
   border: none;
   height: 8px;
-  background-color: hsl(180deg, 66%, 49%);
+  background-color: hsl(180, 66%, 49%);
 }
 .stats__title {
   font-size: 54px;
@@ -101,7 +63,7 @@
   width: 28%;
   margin: 0 auto;
   font-size: 18px;
-  color: hsl(257deg, 7%, 63%);
+  color: hsl(257, 7%, 63%);
 }
 .stats__cards {
   margin: 100px auto 50px;
@@ -120,7 +82,7 @@
   position: relative;
 }
 .stats__cards .card__background {
-  background-color: hsl(257deg, 27%, 26%);
+  background-color: hsl(257, 27%, 26%);
   padding: 16px 20px;
   border-radius: 50px;
   position: absolute;
@@ -138,7 +100,7 @@
   font-size: 18px;
   width: 85%;
   margin: 20px auto 0;
-  color: hsl(257deg, 7%, 63%);
+  color: hsl(257, 7%, 63%);
 }
 .stats__cards .card__second {
   margin-top: 40px;
@@ -151,7 +113,7 @@
   background-image: url(./../../images/bg-boost-desktop.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: hsl(257deg, 27%, 26%);
+  background-color: hsl(257, 27%, 26%);
   text-align: center;
   padding: 80px 0;
 }
@@ -198,9 +160,6 @@
   .hero {
     width: 90%;
   }
-  .url-short {
-    width: 90%;
-  }
   .stats__cards {
     grid-template-columns: repeat(3, 250px);
     width: 790px;
@@ -219,17 +178,6 @@
   }
   .hero__image {
     width: 550px;
-  }
-  .url-short {
-    height: 120px;
-  }
-  .url-short__input {
-    padding: 20px 20px;
-    font-size: 16px;
-  }
-  .url-short__button {
-    padding: 20px 20px;
-    font-size: 16px;
   }
   .stats {
     margin-top: 200px;
@@ -296,23 +244,6 @@
   .action__button {
     display: flex;
     margin: 40px auto 0;
-  }
-  .url-short {
-    display: grid;
-    grid-template-columns: 1fr;
-    height: 180px;
-    padding: 20px 0;
-  }
-  .url-short__input {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px 0;
-    text-indent: 20px;
-  }
-  .url-short__button {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px 0;
   }
   .stats {
     padding-top: 200px;

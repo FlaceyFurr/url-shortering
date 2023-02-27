@@ -28,13 +28,13 @@
 }
 .navigation__link {
   text-decoration: none;
-  color: hsl(257deg, 7%, 63%);
+  color: hsl(257, 7%, 63%);
   font-weight: 700;
   font-size: 16px;
   transition: all 0.335s ease-in;
 }
 .navigation__link:hover {
-  color: hsl(257deg, 27%, 26%);
+  color: hsl(257, 27%, 26%);
 }
 .navigation__right {
   width: 180px;
@@ -44,18 +44,18 @@
 .navigation__button-login {
   background-color: white;
   border: none;
-  color: hsl(257deg, 7%, 63%);
+  color: hsl(257, 7%, 63%);
   font-weight: 700;
   font-size: 16px;
   transition: all 0.335s ease-in;
 }
 .navigation__button-login:hover {
   cursor: pointer;
-  color: hsl(257deg, 27%, 26%);
+  color: hsl(257, 27%, 26%);
 }
 .navigation__button-sign {
   color: white;
-  background-color: hsl(180deg, 66%, 49%);
+  background-color: hsl(180, 66%, 49%);
   border: none;
   padding: 5px 20px;
   font-size: 16px;
@@ -65,7 +65,7 @@
 }
 .navigation__button-sign:hover {
   cursor: pointer;
-  background-color: hsl(180deg, 90%, 65%);
+  background-color: hsl(180, 90%, 65%);
 }
 
 /* Adaptive */

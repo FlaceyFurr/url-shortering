@@ -20,7 +20,7 @@
   margin-top: 15px;
 }
 .menu__link:hover {
-  color: hsl(257deg, 7%, 63%);
+  color: hsl(257, 7%, 63%);
 }
 .menu__button-login {
   background-color: transparent;
@@ -33,11 +33,11 @@
 }
 .menu__button-login:hover {
   cursor: pointer;
-  color: hsl(257deg, 7%, 63%);
+  color: hsl(257, 7%, 63%);
 }
 .menu__button-sign {
   color: white;
-  background-color: hsl(180deg, 66%, 49%);
+  background-color: hsl(180, 66%, 49%);
   border: none;
   padding: 5px 20px;
   font-size: 16px;
@@ -47,7 +47,7 @@
 }
 .menu__button-sign:hover {
   cursor: pointer;
-  background-color: hsl(180deg, 90%, 65%);
+  background-color: hsl(180, 90%, 65%);
 }
 .menu-button-container {
   display: none;
@@ -77,7 +77,7 @@
 
 .menu-button {
   display: block;
-  background-color: hsl(257deg, 27%, 26%);
+  background-color: hsl(257, 27%, 26%);
   position: absolute;
   height: 4px;
   width: 30px;
@@ -86,7 +86,7 @@
 }
 .menu-button::before {
   display: block;
-  background-color: hsl(257deg, 27%, 26%);
+  background-color: hsl(257, 27%, 26%);
   position: absolute;
   height: 4px;
   width: 30px;
@@ -97,7 +97,7 @@
 }
 .menu-button::after {
   display: block;
-  background-color: hsl(257deg, 27%, 26%);
+  background-color: hsl(257, 27%, 26%);
   position: absolute;
   height: 4px;
   width: 30px;
@@ -127,7 +127,7 @@
     padding: 10px 0;
     width: 95%;
     color: white;
-    background-color: hsl(257deg, 27%, 26%);
+    background-color: hsl(257, 27%, 26%);
   }
   .menu > li:first-child {
     border-radius: 10px 10px 0 0;
